@@ -23,7 +23,21 @@ class JardiscraperPipeline:
         #convert string to number
         # nbr_rater_string = adaptater.get("nbr_rater")
         # adaptater["nbr_rater"] = int(nbr_rater_string)
+        return item
+    
+class JardicatPipeline:
+    def process_item(self, item, spider):
+
+        # adaptater = ItemAdapter(item)
+        # cat_name = adaptater.get("cat_parente")
+        # if '"' in cat_name:
+        #     cat_name = cat_name.replace('"', "")
+        #     adaptater['cat_parente'] = cat_name
 
 
+        # cat_name = adaptater.get("titre_categorie")
+        # if '"' in cat_name:
+        #     cat_name = cat_name.strip().replace('"', "")
+        #     adaptater['titre_categorie'] = cat_name
 
         return item

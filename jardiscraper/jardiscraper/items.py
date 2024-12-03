@@ -13,7 +13,10 @@ class JardiscraperItem(scrapy.Item):
     title = scrapy.Field()
     price = scrapy.Field()
     marque = scrapy.Field()
-    nombre_consommateur = scrapy.Field()
-    nbre_rater = scrapy.Field()
     src = scrapy.Field()
-    id_product = scrapy.Field()
+
+class JardicatItem(scrapy.Item):
+    titre_categorie = scrapy.Field()
+    url_categorie = scrapy.Field()
+    is_page_list = scrapy.Field()
+    cat_parente = scrapy.Field()

@@ -64,6 +64,7 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    "jardiscraper.pipelines.JardiscraperPipeline": 300,
+   "jardiscraper.pipelines.JardicatPipeline":200
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
