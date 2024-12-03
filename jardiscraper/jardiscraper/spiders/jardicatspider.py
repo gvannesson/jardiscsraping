@@ -10,7 +10,6 @@ class JardispiderSpider(scrapy.Spider):
     start_urls = ["https://www.jardiland.com"]
 
     def parse(self, response):
-        print("############################salut#####################""")
         categories = response.css("a.ens-main-navigation-items__link.ds-ens-anchor.ds-ens-anchor--link.ens-main-navigation-items__link")
         for categorie in categories:
             url_du_moment="https://www.jardiland.com"+categorie.attrib['href']
@@ -34,7 +33,6 @@ class JardispiderSpider(scrapy.Spider):
     
 
     def parse_subcategorie(self, response):
-        print("############################hello#####################""")
         sub_categories = response.css('a.ens-product-list-categories__item')
         print(sub_categories)
         classe_parente = response.meta['cat_parente']
