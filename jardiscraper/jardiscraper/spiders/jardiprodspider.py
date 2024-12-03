@@ -7,7 +7,7 @@ from jardiscraper.pipelines import JardiscraperPipeline
 
 class JardispiderSpider(scrapy.Spider):
     name = "jardiprodspider"
-    with open("/home/addeche/Documents/Projets Python/Projet_scraping_jardiland/jardiscraper/jardicategorie.csv", newline="") as csvfile:
+    with open("jardicategorie.csv", newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         start_urls=[]
         for row in reader:
